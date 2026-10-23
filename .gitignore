@@ -2,6 +2,7 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
+
 .env
 .env.*
 !.env.example
@@ -12,5 +13,4 @@ outputs/
 *.safetensors
 *.gguf
 
-.DS_Store
 .vscode/
