@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "total": 200,
+  "train": 160,
+  "test": 40,
+  "by_entity": {
+    "EMPLOYEES": {
+      "train": 40,
+      "test": 10
+    },
+    "PROJECTS": {
+      "train": 40,
+      "test": 10
+    },
+    "INVENTORY": {
+      "train": 40,
+      "test": 10
+    },
+    "DEALS": {
+      "train": 40,
+      "test": 10
+    }
+  },
+  "formats": {
+    "TABLE": 49,
+    "JSON": 53,
+    "DEFAULT": 48,
+    "LIST": 50
+  },
+  "valid_ecql": true,
+  "held_out_surface_families": [
+    4,
+    5
+  ],
+  "caveat": "Surface-family holdout is not proof of semantic generalization; audit manually."
+}

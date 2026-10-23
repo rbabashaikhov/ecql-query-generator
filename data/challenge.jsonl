@@ -1,0 +1,20 @@
+{"instruction": "Переведи запрос на ECQL", "input": "Кто получает больше 150 тысяч?", "output": "FETCH [EMPLOYEES] WHERE @salary ABOVE 150000"}
+{"instruction": "Переведи запрос на ECQL", "input": "Выведи работников младше 30 лет", "output": "FETCH [EMPLOYEES] WHERE @age BELOW 30"}
+{"instruction": "Переведи запрос на ECQL", "input": "Сотрудники из Казани, только не из отдела HR", "output": "FETCH [EMPLOYEES] WHERE @city IS 'Kazan' && @department NOT 'hr'"}
+{"instruction": "Переведи запрос на ECQL", "input": "Хочу всех работников, у кого зарплата ниже 80 тысяч или стаж выше пяти лет", "output": "FETCH [EMPLOYEES] WHERE @salary BELOW 80000 || @experience ABOVE 5"}
+{"instruction": "Переведи запрос на ECQL", "input": "Дай полный перечень сотрудников в JSON", "output": "FETCH [EMPLOYEES] AS JSON"}
+{"instruction": "Переведи запрос на ECQL", "input": "Какие проекты сейчас активны?", "output": "FETCH [PROJECTS] WHERE @status IS 'active'"}
+{"instruction": "Переведи запрос на ECQL", "input": "Проекты с бюджетом более миллиона", "output": "FETCH [PROJECTS] WHERE @budget ABOVE 1000000"}
+{"instruction": "Переведи запрос на ECQL", "input": "Покажи проекты не с высоким приоритетом", "output": "FETCH [PROJECTS] WHERE @priority NOT 'high'"}
+{"instruction": "Переведи запрос на ECQL", "input": "Нужны проекты со средней приоритетностью и командой больше 10 человек", "output": "FETCH [PROJECTS] WHERE @priority IS 'medium' && @team_size ABOVE 10"}
+{"instruction": "Переведи запрос на ECQL", "input": "Все проекты табличкой, без фильтров", "output": "FETCH [PROJECTS] AS TABLE"}
+{"instruction": "Переведи запрос на ECQL", "input": "Товары дешевле 5000 рублей", "output": "FETCH [INVENTORY] WHERE @price BELOW 5000"}
+{"instruction": "Переведи запрос на ECQL", "input": "Покажи зарезервированные товары списком", "output": "FETCH [INVENTORY] WHERE @status IS 'reserved' AS LIST"}
+{"instruction": "Переведи запрос на ECQL", "input": "Товары с остатком больше 10 или с количеством меньше пяти", "output": "FETCH [INVENTORY] WHERE @stock ABOVE 10 || @quantity BELOW 5"}
+{"instruction": "Переведи запрос на ECQL", "input": "Неэлектронные товары с ценой ровно 10000", "output": "FETCH [INVENTORY] WHERE @category NOT 'electronics' && @price IS 10000"}
+{"instruction": "Переведи запрос на ECQL", "input": "Выгрузи весь склад в JSON", "output": "FETCH [INVENTORY] AS JSON"}
+{"instruction": "Переведи запрос на ECQL", "input": "Сделки на сумму свыше 500 тысяч", "output": "FETCH [DEALS] WHERE @amount ABOVE 500000"}
+{"instruction": "Переведи запрос на ECQL", "input": "Покажи проигранные сделки", "output": "FETCH [DEALS] WHERE @status IS 'lost'"}
+{"instruction": "Переведи запрос на ECQL", "input": "Сделки не из Сибири и с вероятностью ниже 25", "output": "FETCH [DEALS] WHERE @region NOT 'Siberia' && @probability BELOW 25"}
+{"instruction": "Переведи запрос на ECQL", "input": "Сделки менеджера Анны или сделки на сумму ровно миллион", "output": "FETCH [DEALS] WHERE @manager IS 'Anna' || @amount IS 1000000"}
+{"instruction": "Переведи запрос на ECQL", "input": "Полный список сделок без условий", "output": "FETCH [DEALS] AS LIST"}
