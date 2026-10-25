@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "dataset": "data/test.jsonl",
+  "evaluated": 40,
+  "syntax_validity": 0.0,
+  "exact_match_accuracy": 0.0,
+  "sql_hallucination_rate": 0.95,
+  "average_generation_seconds": 3.186525
+}
