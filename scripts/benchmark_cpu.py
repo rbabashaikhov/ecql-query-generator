@@ -41,12 +41,18 @@ def encode_example(
     ]
 
     # Same non-thinking prompt format as baseline evaluation.
-    prompt_ids = tokenizer.apply_chat_template(
+    prompt_encoding = tokenizer.apply_chat_template(
         messages,
         tokenize=True,
         add_generation_prompt=True,
         enable_thinking=False,
-    )
+        return_dict=True,
+)
+
+    prompt_ids = prompt_encoding["input_ids"]
+
+    if isinstance(prompt_ids, torch.Tensor):
+        prompt_ids = prompt_ids.squeeze(0).tolist()
 
     # ECQL completion plus Qwen chat end-of-message token.
     completion_ids = tokenizer.encode(
