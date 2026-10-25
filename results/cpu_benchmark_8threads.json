@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "training": "LoRA CPU BF16",
+  "threads": 8,
+  "steps": 2,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "max_length": 256,
+  "batch_size": 1,
+  "average_step_seconds": 0.946,
+  "total_elapsed_seconds": 1.91,
+  "measurements": [
+    {
+      "step": 1,
+      "loss": 6.420055,
+      "seconds": 0.948,
+      "process_ram_gib": 4.085,
+      "tokens": 87
+    },
+    {
+      "step": 2,
+      "loss": 4.093503,
+      "seconds": 0.945,
+      "process_ram_gib": 4.282,
+      "tokens": 92
+    }
+  ]
+}

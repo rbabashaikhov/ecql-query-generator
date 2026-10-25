@@ -1,0 +1,22 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "method": "LoRA SFTTrainer",
+  "seed": 42,
+  "train_examples": 144,
+  "validation_examples": 16,
+  "epochs": 3.0,
+  "max_steps": -1,
+  "learning_rate": 0.0002,
+  "gradient_accumulation": 4,
+  "train_loss": 0.33194957458181307,
+  "evaluation": {
+    "eval_loss": 0.010363624431192875,
+    "eval_runtime": 5.9398,
+    "eval_samples_per_second": 2.694,
+    "eval_steps_per_second": 2.694,
+    "eval_entropy": 0.00704905460588634,
+    "eval_mean_token_accuracy": 0.9981617629528046,
+    "eval_num_tokens": 42696.0,
+    "epoch": 3.0
+  }
+}

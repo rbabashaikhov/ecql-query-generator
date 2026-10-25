@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "adapter": "models/ecql-lora-v1",
+  "dataset": "data/test.jsonl",
+  "evaluated": 40,
+  "syntax_validity": 1.0,
+  "exact_match_accuracy": 0.975,
+  "sql_hallucination_rate": 0.0,
+  "average_generation_seconds": 3.054925
+}
